@@ -1,0 +1,11 @@
+<h1>Receipt:</h1>
+
+<% @product_ids.each() do |product| %>
+<ul>
+  <li><%= Product.find(product.to_i()).description() %>&nbsp;-&nbsp;<%= Product.find(product.to_i()).cost() %></li>
+</ul>
+
+
+<% end %>
+<h2>Total cost: <%= @total_cost %></h2>
+<a href="/">HOME</a>

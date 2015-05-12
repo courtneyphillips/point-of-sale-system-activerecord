@@ -1,0 +1,28 @@
+<h1>Products</h1>
+<% if @products.any?() %>
+  <% @products.each() do |product| %>
+    <ul>
+      <li><%= product.description() %> - $<%= product.cost() %>0</li>
+    </ul>
+
+  <% end %>
+
+  <% else %>
+  <p>currently no products in stock</p>
+<% end %>
+
+
+<div class="form">
+
+  <form action='/add_product' method= "post">
+    <label for="description">Product Description:</label>
+    <input id="description" name="description" type="text">
+
+    <label for="cost">Cost:</label>
+    <input id="price" name="cost" type="number">
+
+    <button type="submit">Add Product</button>
+  </form>
+
+
+  <a href="/">HOME</A>

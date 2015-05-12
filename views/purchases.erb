@@ -1,0 +1,16 @@
+
+
+
+<h1>Purchase Item(s):</h1>
+
+<form action="/purchase/new" method="post">
+  <input name="_method" type="hidden" value="patch">
+  <% @products.each() do |product| %>
+  <div class="checkbox">
+    <label>
+    <input type="checkbox" name="product_ids[]" value="<%= product.id() %>"><%= product.description() %>
+    </label>
+  </div>
+  <% end %>
+  <button type="submit">Buy!</button>
+</form>
