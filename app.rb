@@ -63,15 +63,20 @@ post('/report/') do
   end_date = params.fetch("end_date")
   @results = Purchase.created_between(start_date, end_date)
   @results.each do |result|
+    erb(:report)
+  end
+end
+
 
 
 #  @results = Purchase.where("created_at >= :#{start_date} AND created_at <= :#{end_date}")
-  erb(:report)
-end
+#   erb(:report)
+# end
 
 
 
 
 get('/receipt') do
   @product = Product.find(product_id)
+  erb(:receipt)
 end
