@@ -55,7 +55,6 @@ post('/report/') do
   end
 end
 
-
 get('/receipt') do
   @product = Product.find(product_id)
   erb(:receipt)

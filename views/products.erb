@@ -1,7 +1,8 @@
 <h2>Products</h2>
 <% if @products.any?() %>
   <% @products.each() do |product| %>
-  <div class="list">
+  
+  <div class="products-box">
     <br>
     <ul>
       <li><%= product.description() %> - $<%= product.cost() %>0</li>
