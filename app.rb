@@ -16,18 +16,6 @@ get('/purchases/') do
   erb(:purchases)
 end
 
-# get('/purchases/:id') do
-# #create purchases here.
-# purchase_id
-# fetch product 1
-# fetching product 2
-# [product 1, product 2]
-#  each() do
-#   new_purchase = Purchase.create(product, cost, :purchase_id => purchase_id)
-# end
-#need post (create new purchase)
-#need patch (update product)
-
 get('/products/') do
   @products = Product.all().in_stock()
   erb(:products)
@@ -66,14 +54,6 @@ post('/report/') do
     erb(:report)
   end
 end
-
-
-
-#  @results = Purchase.where("created_at >= :#{start_date} AND created_at <= :#{end_date}")
-#   erb(:report)
-# end
-
-
 
 
 get('/receipt') do
