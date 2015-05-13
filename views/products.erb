@@ -1,14 +1,19 @@
-<h1>Products</h1>
+<h2>Products</h2>
 <% if @products.any?() %>
   <% @products.each() do |product| %>
+  <div class="list">
+    <br>
     <ul>
       <li><%= product.description() %> - $<%= product.cost() %>0</li>
     </ul>
-
+    <br>
+  </div>
   <% end %>
 
   <% else %>
-  <p>currently no products in stock</p>
+  <br>
+  <p><em>There are currently no products in stock. Try adding one below:</em></p>
+  <br>
 <% end %>
 
 
@@ -24,5 +29,4 @@
     <button type="submit">Add Product</button>
   </form>
 
-
-  <a href="/">HOME</A>
+</div>

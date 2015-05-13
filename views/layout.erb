@@ -4,31 +4,37 @@
     <title>Gin &amp; Faucet</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   </head>
-
-
   <body>
     <div class="container">
       <nav class="navbar navbar-default navbar-static-top">
-    <div class="container" align="center">
-
-      <div class="btn-group" role="group" aria-label="...">
-        <button type="button" class="btn btn-default"><a href="/products/">See All Products</a></button>
-        <button type="button" class="btn btn-default"><a href="/report/">Create Reports</a></button>
-        <button type="button" class="btn btn-default">Right</button>
+        <div class="container" align="center">
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default"><a href="/products/">See All Products</a></button>
+            <button type="button" class="btn btn-default"><a href="/report/">Create Reports</a></button>
+            <button type="button" class="btn btn-default"><a href="/purchases/">Sell item</a></button>
+            <button type="button" class="btn btn-default"><a href="/">Return Home</a></button>
+        </div>
       </div>
+    </nav>
 
-    </div>
-  </nav>
+    <div class="jumbotron">
+      <h1>
+        <span class="glyphicon glyphicon-grain" aria-hidden="true">
+        </span>
+        Gin &amp; Faucet
+        <span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
+      </h1>
 
-
-      <div class="jumbotron"><h1><span class="glyphicon glyphicon-grain" aria-hidden="true"></span>  Gin &amp; Faucet  <span class="glyphicon glyphicon-grain" aria-hidden="true"></span></h1>
       <p class="lead">For all your antique needs; no matter how <em>useless</em> or <em>unnecessary</em>.</p>
-      </div>
+    </div>
 
 
       <div class="container">
-        <%= yield %>
+        <div class="content">
+          <%= yield %>
+        </div>
       </div>
+
     </div>
   </body>
 </html>
