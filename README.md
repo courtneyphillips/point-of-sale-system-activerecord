@@ -8,7 +8,7 @@ This Point of Sale system was built by [Courtney Phillips](https://github.com/co
 
 ## Motivation
 
-This project was created as an excercise in integrating ActiveRecord one-to-many database relationships in Ruby/Sinatra projects.
+This project was created as an excercise in integrating [ActiveRecord](http://guides.rubyonrails.org/active_record_basics.html) one-to-many database relationships in Ruby/Sinatra projects.
 
 ## Installation & Setup
 
@@ -24,7 +24,7 @@ The Point of Sale program uses the following gems:
   - PG
   - Rake
 
-To install, run `gem install bundle` in the terminal.
+To install, run `$ gem install bundle` in the terminal.
 
 ### Databases
 
@@ -52,7 +52,7 @@ Questions, concerns, fan-mail, or other grievances can be directed to Courtney a
 
 ## License
 
-The MIT License (MIT)
+[The MIT License (MIT)](http://opensource.org/licenses/MIT)
 
 Copyright (c) 2015 Courtney Phillips
 
