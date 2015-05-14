@@ -12,7 +12,7 @@ This project was created as an excercise in integrating [ActiveRecord](http://gu
 
 ## Installation & Setup
 
-### Gems
+#### Gems
 
 The Point of Sale program uses the following gems:
 
@@ -26,7 +26,7 @@ The Point of Sale program uses the following gems:
 
 To install, run `$ gem install bundle` in the terminal.
 
-### Databases
+#### Databases
 
 Additionally, Point of Sale utilizes databases via ActiveRecord. Should you clone this repository, simply do the following to establish and prepare similar databases for your own use:
 
