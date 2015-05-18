@@ -46,6 +46,14 @@ Both method and integration tests for Point of Sale utilize RSpec. Simply run `$
   - Source Code: https://github.com/courtneymaepdx/point-of-sale-system-activerecord
   - Pull Requests: https://github.com/courtneymaepdx/point-of-sale-system-activerecord/pulls
 
+## Development Roadmap
+
+  Point of Sale System is still a work in progress. The following are features adn fixes to be implemented as the project develops. Any additional suggestions can be contributed via the Issue Tracker above.
+  
+  - Build out the "reports" functionality to provide more detailed information for the time period provided. Perhaps graphs, daily profits, etc.
+  - Re-work front end for maximum readability and user-friendliness.
+  - Add inventory tracking features.
+
 ## Contact
 
 Questions, concerns, fan-mail, or other grievances can be directed to Courtney at <courtney.mae.phillips@gmail.com>.
